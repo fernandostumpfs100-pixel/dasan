@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DASAN – Clínica Odontológica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      /* 
+         DESIGN TOKENS - FRESH DENTAL BOUTIQUE
+         Background main: #F5EFE7
+         Cards background: #FFFFFF
+         Primary text: #2F2F2F
+         Secondary text: #6F6F6F
+         Brand accent: #11B7B5
+         Hover/depth accent: #0E8F8D
+         Dark neutral: #3A4A4F
+      */
+      
+      :root {
+        --bg-main: #F5EFE7;
+        --text-primary: #2F2F2F;
+        --text-secondary: #6F6F6F;
+        --brand-accent: #11B7B5;
+        --brand-accent-hover: #0E8F8D;
+        --dark-neutral: #3A4A4F;
+      }
+
+      body { 
+        font-family: 'Plus Jakarta Sans', sans-serif; 
+        background-color: var(--bg-main);
+        color: var(--text-primary);
+      }
+      
+      .text-primary { color: var(--text-primary); }
+      .text-secondary { color: var(--text-secondary); }
+      .bg-main { background-color: var(--bg-main); }
+      .bg-brand { background-color: var(--brand-accent); }
+      .text-brand { color: var(--brand-accent); }
+      .bg-dark-neutral { background-color: var(--dark-neutral); }
+      .text-dark-neutral { color: var(--dark-neutral); }
+
+      .card-soft {
+        background: #ffffff;
+        border-radius: 2.5rem;
+        box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+
+      .btn-primary {
+        background-color: var(--brand-accent);
+        color: #ffffff;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        background-color: var(--brand-accent-hover);
+        box-shadow: 0 10px 20px -10px rgba(17, 183, 181, 0.3);
+      }
+
+      .btn-neutral {
+        background-color: var(--dark-neutral);
+        color: #ffffff;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-neutral:hover {
+        transform: translateY(-2px);
+        background-color: var(--text-primary);
+      }
+
+      .nav-glass {
+        background: rgba(245, 239, 231, 0.85);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      .section-spacing {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+      }
+
+      @media (max-width: 768px) {
+        .section-spacing {
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+        }
+      }
+
+      h1, h2, h3 {
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+      }
+    }
+    </script>
+  </head>
+  <body class="antialiased overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
